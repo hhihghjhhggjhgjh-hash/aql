@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>عقل — AQL</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--black:#080808;--gold:#c9a84c;--gold-dim:rgba(201,168,76,0.15);--gold-border:rgba(201,168,76,0.3);--white:#f0ece4;--muted:rgba(240,236,228,0.45)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{min-height:100vh;background:var(--black);font-family:'Tajawal',sans-serif;color:var(--white);overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 60% 40% at 50% 0%,rgba(201,168,76,0.08) 0%,transparent 70%);pointer-events:none;z-index:0}
+.container{position:relative;z-index:1;max-width:480px;margin:0 auto;padding:56px 24px 80px;display:flex;flex-direction:column;align-items:center}
+.crow-ring{width:96px;height:96px;border-radius:50%;border:1.5px solid rgba(201,168,76,0.3);display:flex;align-items:center;justify-content:center;font-size:48px;margin-bottom:20px}
+.channel-name{font-size:38px;font-weight:900;letter-spacing:10px;color:#c9a84c;margin-bottom:6px}
+.channel-sub{font-size:13px;color:rgba(240,236,228,0.45);letter-spacing:3px;margin-bottom:12px}
+.divider{width:40px;height:1px;background:linear-gradient(90deg,transparent,#c9a84c,transparent);margin-bottom:20px}
+.bio{font-size:14px;color:rgba(240,236,228,0.45);text-align:center;line-height:1.8;margin-bottom:40px}
+.section-label{font-size:10px;letter-spacing:4px;color:#c9a84c;font-weight:600;margin-bottom:16px;align-self:flex-start;width:100%}
+.links-group,.studies-group{width:100%;display:flex;flex-direction:column;gap:12px;margin-bottom:40px}
+.link-card{display:flex;align-items:center;gap:16px;padding:18px 20px;border-radius:14px;border:1px solid rgba(201,168,76,0.3);background:rgba(201,168,76,0.15);text-decoration:none;color:#f0ece4;transition:all 0.3s}
+.link-card:hover{border-color:#c9a84c;background:rgba(201,168,76,0.25);transform:translateY(-2px)}
+.link-icon{width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2);flex-shrink:0}
+.link-text{flex:1}
+.link-title{font-size:15px;font-weight:700;margin-bottom:2px}
+.link-desc{font-size:12px;color:rgba(240,236,228,0.45)}
+.link-arrow{font-size:16px;color:#c9a84c}
+.study-card{display:flex;align-items:flex-start;gap:14px;padding:16px 18px;border-radius:12px;border:1px solid rgba(201,168,76,0.12);background:rgba(255,255,255,0.02);text-decoration:none;color:#f0ece4;transition:all 0.3s}
+.study-card:hover{border-color:rgba(201,168,76,0.35);background:rgba(201,168,76,0.06)}
+.study-num{font-size:11px;color:#c9a84c;font-weight:700;padding-top:2px;min-width:28px}
+.study-info{flex:1}
+.study-title{font-size:14px;font-weight:600;margin-bottom:3px;line-height:1.4}
+.study-meta{font-size:11px;color:rgba(240,236,228,0.45)}
+.study-arrow{font-size:13px;color:#c9a84c;opacity:0.4;padding-top:2px}
+.footer{font-size:11px;color:rgba(240,236,228,0.2);letter-spacing:2px;text-align:center;margin-top:20px}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="crow-ring">🐦</div>
+<div class="channel-name">AQL</div>
+<div class="channel-sub">علم النفس · السلوك البشري</div>
+<div class="divider"></div>
+<div class="bio">نفهم الإنسان من الداخل<br>دراسات علمية · ظواهر نفسية · أسرار السلوك</div>
+<div class="section-label">تابعنا على</div>
+<div class="links-group">
+<a href="https://youtube.com/@AQL" target="_blank" class="link-card">
+<div class="link-icon">▶️</div>
+<div class="link-text"><div class="link-title">يوتيوب — AQL</div><div class="link-desc">شورتس أسبوعية · علم النفس بدقيقة</div></div>
+<div class="link-arrow">←</div>
+</a>
+<a href="https://instagram.com/AQL" target="_blank" class="link-card">
+<div class="link-icon">📸</div>
+<div class="link-text"><div class="link-title">إنستغرام — AQL</div><div class="link-desc">ريلز · بوستات · تفاعل يومي</div></div>
+<div class="link-arrow">←</div>
+</a>
+</div>
+<div class="section-label">مصادر الدراسات</div>
+<div class="studies-group">
+<a href="#" target="_blank" class="study-card">
+<div class="study-num">٠١</div>
+<div class="study-info"><div class="study-title">اختبار المارشميلو — ميشيل 1972</div><div class="study-meta">Stanford University · تأجيل الرغبة والنجاح</div></div>
+<div class="study-arrow">←</div>
+</a>
+<a href="#" target="_blank" class="study-card">
+<div class="study-num">٠٢</div>
+<div class="study-info"><div class="study-title">تجربة ميلغرام — الطاعة للسلطة 1963</div><div class="study-meta">Yale University · حدود الطاعة البشرية</div></div>
+<div class="study-arrow">←</div>
+</a>
+<a href="#" target="_blank" class="study-card">
+<div class="study-num">٠٣</div>
+<div class="study-info"><div class="study-title">تجربة سجن ستانفورد — زيمباردو 1971</div><div class="study-meta">Stanford University · تأثير البيئة على الشخصية</div></div>
+<div class="study-arrow">←</div>
+</a>
+</div>
+<div class="footer">AQL · عقل · علم النفس بالعربي</div>
+</div>
+</body>
+</html>
